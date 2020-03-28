@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ingresoegreso-app-2020": {
+      "hosting": {
+        "IngresosEgresoApp": [
+          "ingresoegreso-app-2020"
+        ]
+      }
+    }
+  }
+}
