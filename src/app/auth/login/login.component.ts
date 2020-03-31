@@ -39,12 +39,12 @@ export class LoginComponent implements OnInit, OnDestroy {
     );   
   }
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.uiSubscription.unsubscribe();
   }
 
-  loginUsuario(){
-    if(this.loginForm.invalid){return;}
+  loginUsuario() {
+    if (this.loginForm.invalid) {return;}
 
     this.store.dispatch( ui.isLoading());
 

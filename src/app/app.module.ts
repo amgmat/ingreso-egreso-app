@@ -12,6 +12,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import {ReactiveFormsModule} from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -24,6 +25,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { OrdenIngresoPipe } from './pipes/orden-ingreso.pipe';
 
 
 
@@ -38,7 +40,8 @@ import { AppRoutingModule } from './app-routing.module';
     DetalleComponent,
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    OrdenIngresoPipe
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    ChartsModule,
     AngularFireAuthModule,
     StoreModule.forRoot(appReducers),
     StoreDevtoolsModule.instrument({
